@@ -1,7 +1,11 @@
-namespace App {
-    //projectItem
+import {  Draggable } from '../models/drag-drop.js';
+import { Basic } from './basic.js';
+import { Project } from '../models/project.js';
+import { autobind } from '../decorators/autobind.js';
 
-export class ProjectItem extends Basic<HTMLUListElement, HTMLLIElement> implements Draggable {
+
+  //projectItem
+  export class ProjectItem extends Basic<HTMLUListElement, HTMLLIElement> implements Draggable {
 
     private project: Project;
 
@@ -37,5 +41,4 @@ export class ProjectItem extends Basic<HTMLUListElement, HTMLLIElement> implemen
 
     }
 
-}
 }

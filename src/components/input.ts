@@ -1,6 +1,10 @@
-namespace App {
-    // 
-export class ProjectInput extends Basic<HTMLDivElement, HTMLFormElement> {
+import { Basic } from './basic.js';
+import { Validatable, validate } from '../util/validation.js';
+import { autobind } from '../decorators/autobind.js';
+import { projectState } from '../state/project.js';
+
+  // Project Input
+  export class ProjectInput extends Basic<HTMLDivElement, HTMLFormElement> {
     titleInputElement: HTMLInputElement;
     descInputElement: HTMLInputElement;
     peopleInputElement: HTMLInputElement;
@@ -67,5 +71,4 @@ export class ProjectInput extends Basic<HTMLDivElement, HTMLFormElement> {
     }   
        
  
-}
 }

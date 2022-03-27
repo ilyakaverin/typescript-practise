@@ -1,6 +1,5 @@
-namespace App {
-    //  validation
-interface Validatable {
+   //  validation
+   export interface Validatable {
     value: string | number;
     required?: boolean;
     minLength?: number;
@@ -8,7 +7,7 @@ interface Validatable {
     min?: number;
     max?: number;
 }
-function validate(object: Validatable) {
+export function validate(object: Validatable) {
     let isValid = true;
     if(object.required) {
         isValid = isValid && object.value.toString().trim().length !== 0
@@ -31,5 +30,4 @@ function validate(object: Validatable) {
     }
     return isValid
 
-}
 }

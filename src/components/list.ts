@@ -1,7 +1,12 @@
-namespace App {
-    // project list
+import {  DragTarget } from '../models/drag-drop.js';
+import { Basic } from './basic.js';
+import { Project, ProjectStatus } from '../models/project.js';
+import { autobind } from '../decorators/autobind.js';
+import { projectState } from '../state/project.js';
+import { ProjectItem } from './item.js';
+  // project list
 
-export class ProjectList extends Basic<HTMLDivElement, HTMLElement> implements DragTarget  {
+  export class ProjectList extends Basic<HTMLDivElement, HTMLElement> implements DragTarget  {
 
     assignedProjects: Project[];
 
@@ -73,5 +78,4 @@ export class ProjectList extends Basic<HTMLDivElement, HTMLElement> implements D
 
     }
    
-}
 }
