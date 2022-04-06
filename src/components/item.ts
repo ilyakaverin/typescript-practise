@@ -1,7 +1,7 @@
-import {  Draggable } from '../models/drag-drop.js';
-import { Basic } from './basic.js';
-import { Project } from '../models/project.js';
-import { autobind } from '../decorators/autobind.js';
+import {  Draggable } from '../models/drag-drop';
+import { Basic } from './basic';
+import { Project } from '../models/project';
+import { autobind } from '../decorators/autobind';
 
 
   //projectItem

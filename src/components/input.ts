@@ -1,7 +1,7 @@
-import { Basic } from './basic.js';
-import { Validatable, validate } from '../util/validation.js';
-import { autobind } from '../decorators/autobind.js';
-import { projectState } from '../state/project.js';
+import { Basic } from './basic';
+import { Validatable, validate } from '../util/validation';
+import { autobind } from '../decorators/autobind';
+import { projectState } from '../state/project';
 
   // Project Input
   export class ProjectInput extends Basic<HTMLDivElement, HTMLFormElement> {
